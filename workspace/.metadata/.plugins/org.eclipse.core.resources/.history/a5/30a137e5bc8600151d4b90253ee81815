@@ -1,0 +1,33 @@
+package edu.iut.app;
+
+import java.util.ArrayList;
+
+public class ApplicationInfoLog extends AbstractApplicationLog {
+
+	private ArrayList<IApplicationLogListener> listeners;
+	
+	/** Ajouter un tableau ou profiter de l'héritage ? */
+	public ApplicationInfoLog() {
+		super();
+		listeners = new ArrayList<>();
+	}
+	
+	@Override
+	public void setMessage(String message) {
+		this.message = message;
+        super.fireMessage("[INFO]", this.message);
+	}
+
+	@Override
+	public String getMessage() {
+			
+		return this;
+	}
+
+	@Override
+	public IApplicationLogListener[] getpplicationLogListeners() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

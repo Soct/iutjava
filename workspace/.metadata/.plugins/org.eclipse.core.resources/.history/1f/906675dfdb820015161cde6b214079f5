@@ -193,7 +193,7 @@ public class OutilsJDBC {
 		System.out.println("Choisissez un film : ");
 		int choix2;
 		choix2 = Saisie.entier();
-		requete = "SELECT fi.NUMFILM FROM ens2004.FILM fi, ens2004.ACTEUR ac WHERE fi.NUMFILM = ac.NUMFILM AND NUMINDIVIDU = '" + choix + "' ORDER BY Titre ";
+		requete = "SELECT fi.NUMFILM FROM ens2004.FILM fi, ens2004.ACTEUR ac WHERE fi.NUMFILM = ac.NUMFILM AND NUMINDIVIDU = '" + choix + "' ORDER BY TitreFONDA ";
 		resultat = OutilsJDBC.exec1Requete(requete, co, 0);
 		choix2 = film(choix2, resultat);
 		System.out.println(choix2);
