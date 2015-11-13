@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\marce\git\iutjava\workspace\iuttp"/>
 			<item value="C:\Users\marce\Downloads\TP1"/>
 			<item value="C:\Users\marce\git\iutjava\workspace\TD1"/>
 			<item value="C:\Users\marce\projetAll\ProjetBDMarceau"/>
