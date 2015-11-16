@@ -8,11 +8,11 @@ public class IUTException /* étendre les exceptio, */{
 
 	}
 	public IUTException(IUTException e) {
-		super (e);
+		//super (e);
 		// Logger une erreur avec le message contenu dans 'e'  en utilisant le singleton session, ie le logger défini dans la session */
 	}
 	public IUTException(String message) {
-		super(message);
+		//super(message);
 		// Logger une erreur avec le message contenu dans 'message'  en utilisant le singleton session, ie le logger défini dans la session */
 	}
 	

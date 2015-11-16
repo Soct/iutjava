@@ -1,6 +1,8 @@
 package edu.iut.gui.widget.agenda;
 
 import java.awt.GridLayout;
+import java.util.ResourceBundle;
+
 import javax.swing.JPanel;
 
 
@@ -9,16 +11,17 @@ import edu.iut.app.ApplicationSession;
 
 public class WeekPanel extends EventPanel {
 
+
 	// Exercice 4
 	public enum WeekDayNames {
 		EMPTYDAY("",""),
-		MONDAY(/* Internationalisation */),
-		TUESDAY(/* Internationalisation */),
-		WEDNESDAY(/* Internationalisation */),
-		THURSDAY(/* Internationalisation */),
-		FRIDAY(/* Internationalisation */),
-		SATURDAY(/* Internationalisation */),
-		SUNDAY(/* Internationalisation */);
+		MONDAY(ApplicationSession.instance().getString("monday"), ApplicationSession.instance().getString("mon")),
+		TUESDAY(ApplicationSession.instance().getString("tuesday"), ApplicationSession.instance().getString("tue")),
+		WEDNESDAY(ApplicationSession.instance().getString("wednesday"), ApplicationSession.instance().getString("wed")),
+		THURSDAY(ApplicationSession.instance().getString("thursday"), ApplicationSession.instance().getString("thu")),
+		FRIDAY(ApplicationSession.instance().getString("friday"), ApplicationSession.instance().getString("fri")),
+		SATURDAY(ApplicationSession.instance().getString("saturday"), ApplicationSession.instance().getString("sat")),
+		SUNDAY(ApplicationSession.instance().getString("sunday"), ApplicationSession.instance().getString("sun"));
 		
 		private String name;
 		private String shortName;
