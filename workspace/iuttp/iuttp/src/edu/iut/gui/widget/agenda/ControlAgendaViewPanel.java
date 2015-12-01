@@ -1,13 +1,23 @@
 package edu.iut.gui.widget.agenda;
 
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
+import java.util.Date;
 
-import javax.swing.*;
+import javax.swing.BoxLayout;
+import javax.swing.JComboBox;
+import javax.swing.JSpinner;
+import javax.swing.JPanel;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.SpinnerModel;
+
+import edu.iut.app.ApplicationSession;
 
 public class ControlAgendaViewPanel extends JPanel {
 
-	static final long serialVersionUID = 1L;
-	
 	CardLayout agendaViewLayout;
 	JPanel contentPane;
 	
@@ -19,9 +29,6 @@ public class ControlAgendaViewPanel extends JPanel {
 
 		this.agendaViewLayout = layerLayout;
 		this.contentPane = contentPane;
-		
-		
-		
 		/** EX3: REMPLACEMENT DU BOUTON NEXT */
 	}
 	

@@ -29,14 +29,16 @@ public class Person {
 		personFunction = PersonFunction.NONE;
 	}
 	
-	public Person(PersonFunction personFunction,
-				  String firstname,
-				  String lastname,
-				  String email,
-				  String phone) {
-		/* EX2: initialisation */;
+	public Person(PersonFunction personFunction, String firstname,
+			String lastname, String email, String phone) {
+		super();
+		this.personFunction = personFunction;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+		this.phone = phone;
 	}
-	
+
 	public void setFunction(PersonFunction function) {
 		this.personFunction = function;
 	}
@@ -68,5 +70,6 @@ public class Person {
 	}
 	public String getPhone() {
 		return phone;
-	}
+	}	
+
 }

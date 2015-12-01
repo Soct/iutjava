@@ -17,7 +17,6 @@ import javax.swing.JSplitPane;
 import edu.iut.gui.widget.agenda.AgendaPanelFactory;
 import edu.iut.gui.widget.agenda.ControlAgendaViewPanel;
 import edu.iut.gui.widget.agenda.AgendaPanelFactory.ActiveView;
-import edu.iut.gui.widget.agenda.Menu;
 
 
 public class SchedulerFrame extends JFrame {
@@ -46,12 +45,15 @@ public class SchedulerFrame extends JFrame {
 		JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,agendaViewPanel, contentPane);
 		this.setContentPane(splitPane);
 		
+		JMenuBar menuBar = new JMenuBar();
+		JMenu menu;		
+		JMenuItem menuItem;
 		
 		/* File Menu */
-		JMenuBar menuBar = new Menu();
-		
-		
 		/** EX4 : MENU : UTILISER L'AIDE FOURNIE DANS LE TP**/
+		
+		
+		menu = new JMenu("File");
 		
 		
 		this.setJMenuBar(menuBar);

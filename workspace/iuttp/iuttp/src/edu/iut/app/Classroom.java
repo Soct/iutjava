@@ -2,19 +2,19 @@ package edu.iut.app;
 
 public class Classroom {
 	
-	protected String classRoomNumber; // Exemple : "I202"
-	
 	public Classroom() {
 		classRoomNumber="not affected";
 	}
 	public Classroom(String classRoomNumber) {
-		this.classRoomNumber=classRoomNumber;
+		/* EX2: AFFECTATION */;
 	}
 	
 	public void setClassroomNumber(String number) {
-		this.classRoomNumber=number;
+		/* EX2: AFFECTATION */;
 	}
 	public String getClassRoomNumber() {
 		return classRoomNumber;
 	}
+	
+	protected String classRoomNumber;
 }
