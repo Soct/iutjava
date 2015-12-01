@@ -1,3 +1,0 @@
-#Ignore les dossier doc et metadata
-.metadata/
-doc/

@@ -1,7 +1,7 @@
 package edu.iut.app;
 /**
  * Criteria est l'interface qui permet de vérifier qu'un objet 
- * est bien valide lorsqu'on l'instancie
+ * est bien valide lorsqu'on l'instancie.
  * 
  * @author Marceau Pheulpin & Paul Chaumeil
  *
