@@ -1,5 +1,10 @@
 package edu.iut.app;
-
+/**
+ * 
+ * 
+ * @author Marceau Pheulpin & Paul Chaumeil
+ *
+ */
 public class CriteriaPerson implements Criteria {
 
 	@Override

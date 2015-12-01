@@ -1,7 +1,12 @@
 package edu.iut.app;
 
 import java.util.Date;
-
+/**
+ * 
+ * 
+ * @author Marceau Pheulpin & Paul Chaumeil
+ *
+ */
 public class CriteriaDate implements Criteria {
 	
 	private Date start;

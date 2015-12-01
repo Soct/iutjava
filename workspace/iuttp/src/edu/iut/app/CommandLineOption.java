@@ -27,20 +27,41 @@ public class CommandLineOption<ValueType> /* EX1 : CLASSE GENERIC SUR le type Va
 	}
 	
 	public CommandLineOption() {		
-		/* EX1: Initializer les attributs */
+		this(OptionType.NONE, "", "", null);
 	}
+	
 	public CommandLineOption(final OptionType optionType, final String key, final String description, final ValueType defaultValue) {
 		this.key=key;
 		this.description=description;
 		this.defaultValue=defaultValue;
 		this.optionType=optionType;
 	}
+	/**
+	 * 
+	 * 
+	 * @param optionType
+	 * 				set le type d'option.
+	 * @param key
+	 * 				set la clé.
+	 * @param description
+	 * 				set la description.
+	 * @param defaultValues
+	 * 				set la valeur par défaut.
+	 */
 	public void setOption(OptionType optionType, String key, String description, ValueType defaultValue) {
 		this.optionType=optionType;
 		this.key=key;
 		this.description=description;
 		this.defaultValue=defaultValue;
-	}
+	}	
+	
+	/**
+	 * 
+	 * 
+	 * @param value
+	 * 				set la valeur.
+	 */
+	
 	public  void setValue(ValueType value) {
 		this.value = value;
 	}

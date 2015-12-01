@@ -8,7 +8,13 @@ public class Agenda extends LinkedList<ExamEvent> {
 
 	public Agenda() {		
 	}
-	
+	/**
+	 * 
+	 * 
+	 * @param examEvent
+	 * 				Ajoute un evenement a l'agenda.
+	 *
+	 */
 	public void addCheckedEvent(ExamEvent examEvent) {
 		this.add(examEvent);
 	}

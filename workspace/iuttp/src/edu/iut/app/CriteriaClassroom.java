@@ -1,7 +1,12 @@
 package edu.iut.app;
 
 import java.util.ArrayList;
-
+/**
+ * 
+ * 
+ * @author Marceau Pheulpin & Paul Chaumeil
+ *
+ */
 public class CriteriaClassroom implements Criteria{
 
 	private ArrayList<String> batiments;
@@ -17,6 +22,14 @@ public class CriteriaClassroom implements Criteria{
 	}
 
 	@Override
+	/**
+	 * 
+	 * 
+	 * @param exams
+	 * 				On regarde si la Classroom de cet exams est bien conforme.
+	 * @return les exams valides.
+	 * 	
+	 */
 	public Agenda meetCriteria(Agenda exams) {
 		
 		Agenda examOK = new Agenda();
@@ -34,7 +47,13 @@ public class CriteriaClassroom implements Criteria{
 		
 		return examOK;
 	}
-	
+	/**
+	 * 
+	 * 
+	 * @param c
+	 * 				le nom d'une salle.
+	 * @return si la salle a été trouvée.
+	 */
 	private boolean exist(char c)
 	{
 		boolean trouve=false;

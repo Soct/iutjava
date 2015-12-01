@@ -20,6 +20,7 @@ import edu.iut.gui.widget.agenda.AgendaPanelFactory.ActiveView;
 import edu.iut.gui.widget.agenda.Menu;
 
 
+
 public class SchedulerFrame extends JFrame {
 	JPanel contentPane;
 	CardLayout layerLayout;
